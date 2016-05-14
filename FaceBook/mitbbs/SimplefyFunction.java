@@ -7,17 +7,16 @@ package mitbbs;
 
 */
 public class SimplefyFunction {
-	
 	public static String simplifyFunction(String fun) {
 		int left = 0, right = 0;
-		while(left < fun.length()) {
-			while(right < fun.length() && !isCompute(fun.charAt(right))) {
-				right ++;
+		while (left < fun.length()) {
+			while (right < fun.length() && !isCompute(fun.charAt(right))) {
+				right++;
 			}
 		}
 		return "";
 	}
-	
+
 	public static boolean isCompute(char c) {
 		return c == '+' || c == '-' || c == '*' || c == '/';
 	}
@@ -26,6 +25,7 @@ public class SimplefyFunction {
 class Res {
 	public int x;
 	public int num;
+
 	public Res(int x, int num) {
 		this.x = x;
 		this.num = num;

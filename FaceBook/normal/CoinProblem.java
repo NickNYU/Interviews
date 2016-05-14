@@ -11,17 +11,20 @@ package normal;
 
 public class CoinProblem {
 	public static long tellMoneyCombinations(int money) {
-		long[] f = new long[money+1];
+		long[] f = new long[money + 1];
 		f[0] = f[1] = 1;
-		for(int i = 2; i < money+1; i++) {
-			f[i] = f[i-1];
-			if(i > 5)	f[i] += f[i-5];
-			if(i > 20)	f[i] += f[i-20];
-			if(i > 50)	f[i] += f[i-50];
+		for (int i = 2; i < money + 1; i++) {
+			f[i] = f[i - 1];
+			if (i > 5)
+				f[i] += f[i - 5];
+			if (i > 20)
+				f[i] += f[i - 20];
+			if (i > 50)
+				f[i] += f[i - 50];
 		}
 		return f[money];
 	}
-	
+
 	public static int normalMoney(int money) {
 		return 1;
 	}
