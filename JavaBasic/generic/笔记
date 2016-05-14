@@ -1,0 +1,5 @@
+Generic 对 方法 和 class 的声明位置不同
+
+1. class ： public class Generic <T> {}   在class之后
+
+2. method : public <T> String generic (T[] a) {}   在返回类型之前
