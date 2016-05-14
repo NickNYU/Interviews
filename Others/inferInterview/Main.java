@@ -10,7 +10,6 @@ package inferInterview;
  * Please input the number of lines first, in other word, it's an integer value
  */
 import java.util.*;
-import java.io.*;
 
 public class Main {
 	//@Field : set is to store the nodes that we have (the cities we have)

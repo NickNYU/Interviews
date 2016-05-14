@@ -1,10 +1,5 @@
 package thread;
 
-import java.util.Random;
-
-import thread.ThreadScopeShareData.A;
-import thread.ThreadScopeShareData.B;
-
 public class ThreadLocalTest {
 	
 	private static ThreadLocal<Long> threadLocal = new ThreadLocal<> ();

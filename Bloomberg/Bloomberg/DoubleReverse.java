@@ -3,9 +3,9 @@ package Bloomberg;
 public class DoubleReverse {
 	public static double revDouble(double d) {
 	    int intPart = (int) d;
-	    double remain = d - intPart;
-	    int digitRight = 0;
-	    int digitLeft = 0;
+//	    double remain = d - intPart;
+//	    int digitRight = 0;
+//	    int digitLeft = 0;
 	    int left = 0;
 	    while (intPart > 0) {
 		    System.out.println(intPart);
